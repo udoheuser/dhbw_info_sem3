@@ -1,6 +1,6 @@
 # dhbw_info_sem3
 
-In https://github.com/udoheuser werden in separaten Repositories (Unterverzeichnissen, z.B. 1_ggt_euklid) Python-Kivy-Projekte gesammelt, die primär unter Visual Studio 2019 lauffähig sind und welche unter VS 2019 Enterprise getestet wurden. 
+In https://github.com/udoheuser werden in separaten Repositories (Unterverzeichnissen, z.B. 1_ggt_euklid) Python-Kivy-Projekte gesammelt, die primär unter Visual Studio lauffähig sind und welche unter VS 2019 Enterprise getestet wurden. 
 
 Hierzu bitte die jeweilige Solutionsdatei (.sln; z.B. 1_ggt_euklid.sln) der entsprechenden Repositories unter VS laden. 
 Das Debugging innerhalb VS benötigt eine Anaconda-Umgebung inkl. der Libraries kivy, logging, pytest, timeit.
