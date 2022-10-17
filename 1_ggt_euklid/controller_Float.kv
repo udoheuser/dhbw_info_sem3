@@ -1,0 +1,86 @@
+#:kivy 1.0
+
+
+<Controller>:
+    text_input1: text_input1
+    text_input2: text_input2
+    label_results: label_results
+    label_debug: label_debug
+    toggle_debug: toggle_debug
+    toggle_variante: toggle_variante
+
+
+    canvas:
+        Rectangle:
+            source: '../DHBW-Raute-Big.png'
+            pos: self.pos
+            size: self.size
+
+    FloatLayout:
+        Label:
+            text: root.info
+            font_size: self.height
+            size_hint: (.13, .07)
+            pos_hint: {"x": .43, "top": .74}
+
+        Label:
+            text: '1. Wert'
+            size_hint: (.2, .06)
+            pos_hint: {"x": .21, "top": .65}
+        Label:
+            text: '2. Wert'
+            size_hint: (.2, .06)
+            pos_hint: {"x": .47, "top": .65}
+
+        TextInput:
+            id: text_input1
+            size_hint: (.2, .06)
+            pos_hint: {"x": .27, "top": .6}
+        TextInput:
+            id: text_input2
+            size_hint: (.2, .06)
+            pos_hint: {"x": .53, "top": .6}
+
+        Button:
+            id: btn_result
+            text: root.info
+            size_hint: (.2, .06)
+            pos_hint: {"x": .27, "top": .53}
+            on_press: root.do_action()
+        Button:
+            id: btn_clear
+            text: 'Löschen'
+            size_hint: (.2, .06)
+            pos_hint: {"x": .53, "top": .53}
+            on_press: root.do_clear()
+
+        Label:
+            text: 'Ergebnis'
+            font_size: self.height
+            size_hint: (.65, .04)
+            pos_hint: {"x": .02, "top": .44}
+        Label:
+            id: label_results
+            text: 'results come here'
+            font_size: self.height
+            size_hint: (.65, .04)
+            pos_hint: {"x": .33, "top": .44}
+
+        ToggleButton:
+            id: toggle_debug
+            text: 'Debug infos? (N/y)'
+            size_hint: (.2, .06)
+            pos_hint: {"x": .27, "top": .35}
+            state: 'normal'
+        ToggleButton:
+            id: toggle_variante
+            text: 'Rekursive Variante? (N/y)'
+            size_hint: (.2, .06)
+            pos_hint: {"x": .53, "top": .35}
+            state: 'normal'
+
+        Label:
+            id: label_debug
+            text: 'Debug infos: '
+            size_hint: (.65, .1)
+            pos_hint: {"x": .02, "top": .25}

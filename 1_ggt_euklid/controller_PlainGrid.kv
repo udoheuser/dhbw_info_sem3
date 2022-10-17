@@ -1,0 +1,44 @@
+#:kivy 1.0
+
+<Controller>:
+    text_input1: text_input1
+    text_input2: text_input2
+    label_results: label_results
+    label_debug: label_debug
+
+    GridLayout:
+        cols: 2
+        rows: 2
+		padding: 10
+		spacing: 10
+
+		Label:
+            text: 'Wert 1'
+		TextInput:
+                id: text_input1
+
+        Label:
+            text: 'Wert 2'
+        TextInput:
+            id: text_input2
+
+        Button:
+            id: btn_result
+            text: root.info
+            on_press: root.do_action()
+
+        Button:
+            id: btn_clear
+            text: 'Clear'
+            on_press: root.do_clear()
+                
+        Label:
+            text: 'Results'
+
+        Label: 
+            id: label_results
+
+        Label:
+            id: label_debug
+            text: 'Debug infos: '
+

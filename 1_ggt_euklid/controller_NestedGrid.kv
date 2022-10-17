@@ -1,0 +1,115 @@
+#:kivy 1.0
+
+<Controller>:
+    text_input1: text_input1
+    text_input2: text_input2
+    label_results: label_results
+    label_debug: label_debug
+    toggle_debug: toggle_debug
+    toggle_variante: toggle_variante
+
+    canvas:
+        Rectangle:
+            source: '../DHBW-Raute-Big.png'
+            pos: self.pos
+            size: self.size
+
+
+    GridLayout:
+        cols: 1
+
+        Label:
+            text: root.info
+            font_size: '40 sp'
+            color: 0,0,0,1 # black
+
+        GridLayout:
+            cols: 4
+
+            Label:
+            Label:
+                text: 'Wert 1'
+            Label:
+                text: 'Wert 2'
+            Label:
+
+            Label:
+            TextInput:
+                id: text_input1
+				size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                font_size: self.height - 10
+            TextInput:
+                id: text_input2
+				size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                font_size: self.height - 10
+            Label:
+
+            Label:
+            Button:
+                id: btn_result
+                text: root.info
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                font_size: self.height - 10
+                on_press: root.do_action()
+                # markup: True
+            Button:
+                id: btn_clear
+                text: 'Löschen'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                font_size: self.height - 10
+                on_press: root.do_clear()
+                # markup: True
+            Label:
+
+            Label:
+            Label:
+            Label:
+            Label:
+
+            Label:
+            Label:
+                text: 'Ergebnis'
+                font_size: '25sp'
+            Label: 
+                id: label_results
+                font_size: '25sp'
+            Label:
+
+            Label:
+            ToggleButton:
+                id: toggle_debug
+                text: 'Debug infos? (N/y)'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                font_size: self.height - 10
+                state: 'normal'
+            ToggleButton:
+                id: toggle_variante
+                text: 'Rekursive Variante? (N/y)'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                font_size: self.height - 15
+                state: 'normal'
+            Label:
+
+        Label:
+            id: label_debug
+            text: ''
+            multiline: True
+            color: 0,0,0,1 # black
