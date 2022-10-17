@@ -11,7 +11,7 @@ Die Startdatei ist typischerweise main.py und sollte mit Hilfe des Debuggen > De
 
 Das Projekt soll ein Kivy-Fenster öffnen und nach einer Eingabe von Werten eine Ausgabe zeigen.
 
-Im Fall von 
+Im Fall von _1_GGT handelt es sich um ein Anvil-Projekt. Die Repository kann über Anvil.works als Sourcecode kopiert werden.
 
 Weitere Infos finden Sie in der Datei Musterlösung Aufgabe Skript.pdf sowie in den Code-Kommentaren.
 
