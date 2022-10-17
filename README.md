@@ -1,15 +1,17 @@
 # dhbw_info_sem3
 
-In https://github.com/udoheuser werden in separaten Repositories (Unterverzeichnissen, z.B. 1_ggt_euklid) Python-Kivy-Projekte gesammelt, die primär unter Visual Studio lauffähig sind und welche unter VS 2019 Enterprise getestet wurden. 
+In https://github.com/udoheuser/dhbw_info_sem3 werden in separaten Repositories (Unterverzeichnissen, z.B. 1_ggt_euklid) Python-Kivy- und Python-Anvil-Projekte gesammelt, die primär unter Visual Studio und Anvil.works lauffähig sind. 
 
-Hierzu bitte die jeweilige Solutionsdatei (.sln; z.B. 1_ggt_euklid.sln) der entsprechenden Repositories unter VS laden. 
+Im Fall der 1_ggt_euklid bitte die jeweilige Solutionsdatei (.sln; z.B. 1_ggt_euklid.sln) der entsprechenden Repositories unter VS laden. 
 Das Debugging innerhalb VS benötigt eine Anaconda-Umgebung inkl. der Libraries kivy, logging, pytest, timeit.
 
-Die Python-Projekte greifen auf diverse Bilddateien, z.B. DHBW-Raute-Big.png im übergeordneten Verzeichnis dhbw_info_sem3 zu.
+1_ggt_euklid greift auf diverse Bilddateien, z.B. DHBW-Raute-Big.png im übergeordneten Verzeichnis dhbw_info_sem3 zu.
 
 Die Startdatei ist typischerweise main.py und sollte mit Hilfe des Debuggen > Debuggen starten gestartet werden.
 
 Das Projekt soll ein Kivy-Fenster öffnen und nach einer Eingabe von Werten eine Ausgabe zeigen.
+
+Im Fall von 
 
 Weitere Infos finden Sie in der Datei Musterlösung Aufgabe Skript.pdf sowie in den Code-Kommentaren.
 
